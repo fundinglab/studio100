@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la \"C:\\\\Users\\\\matti\\\\Documents\\\\Claude Code\\\\Website builder\" 2>&1; ls \"C:\\\\Users\\\\matti\\\\Downloads\\\\hf_20260510_145325_38a4c90a-88eb-4d49-bcfc-121d5eff7abd.mp4\" 2>&1)",
+      "PowerShell($file = \"C:\\\\Users\\\\matti\\\\Documents\\\\Claude Code\\\\Website builder\\\\public\\\\video\\\\studio100-animation.mp4\"; $size = \\(Get-Item $file\\).Length / 1MB; Write-Output \"File size: $\\([math]::Round\\($size,1\\)\\) MB\")"
+    ]
+  }
+}
