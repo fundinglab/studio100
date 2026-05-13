@@ -18,11 +18,12 @@
       "mcp__Claude_in_Chrome__tabs_create_mcp",
       "mcp__Claude_in_Chrome__navigate",
       "mcp__Claude_in_Chrome__computer",
-      "PowerShell(ssh -o BatchMode=yes -o StrictHostKeyChecking=accept-new -o ConnectTimeout=10 root@157.173.105.166 'echo \"Auth OK as $\\(whoami\\) on $\\(hostname\\). OS: $\\(lsb_release -ds 2>/dev/null || cat /etc/os-release | grep PRETTY_NAME\\)\"')"
+      "PowerShell(ssh -o BatchMode=yes -o StrictHostKeyChecking=accept-new -o ConnectTimeout=10 root@157.173.105.166 'echo \"Auth OK as $\\(whoami\\) on $\\(hostname\\). OS: $\\(lsb_release -ds 2>/dev/null || cat /etc/os-release | grep PRETTY_NAME\\)\"')",
+      "Bash(claude remote-control *)"
     ]
   },
+  "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [
     "ruflo"
-  ],
-  "enableAllProjectMcpServers": true
+  ]
 }
