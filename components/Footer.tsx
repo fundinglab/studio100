@@ -173,6 +173,12 @@ export default function Footer() {
         }
         @media (max-width: 640px) {
           .footer-grid {
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+          }
+        }
+        @media (max-width: 400px) {
+          .footer-grid {
             grid-template-columns: 1fr;
           }
         }

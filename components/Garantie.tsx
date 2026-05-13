@@ -100,6 +100,12 @@ export default function Garantie() {
             padding: 40px !important;
           }
         }
+        @media (max-width: 640px) {
+          .garantie-card {
+            padding: 28px !important;
+            border-radius: 20px !important;
+          }
+        }
       `}</style>
     </section>
   );

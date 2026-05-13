@@ -104,6 +104,7 @@ export default function ROIRechner() {
             viewport={{ once: true, amount: 0.1 }}
             variants={fadeIn}
             transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
+            className="roi-card"
             style={{
               background: '#111111',
               border: '1px solid #1F1F1F',
@@ -160,6 +161,7 @@ export default function ROIRechner() {
             viewport={{ once: true, amount: 0.1 }}
             variants={fadeIn}
             transition={{ duration: 0.6, delay: 0.1, ease: [0.25, 0.46, 0.45, 0.94] }}
+            className="roi-card"
             style={{
               background: '#111111',
               border: '1px solid #1F1F1F',
@@ -289,6 +291,11 @@ export default function ROIRechner() {
           }
           .roi-grid > :global(:nth-child(2)) {
             order: -1;
+          }
+        }
+        @media (max-width: 640px) {
+          :global(.roi-card) {
+            padding: 24px !important;
           }
         }
       `}</style>

@@ -105,6 +105,7 @@ export default function Referenzen() {
                 delay: i * 0.1,
                 ease: [0.25, 0.46, 0.45, 0.94],
               }}
+              className="referenz-card"
               style={{
                 background: '#FFFFFF',
                 border: '1px solid #EAEAEA',
@@ -211,7 +212,15 @@ export default function Referenzen() {
             align-items: flex-start;
           }
           .referenzen-grid {
+            grid-template-columns: 1fr 1fr;
+          }
+        }
+        @media (max-width: 640px) {
+          .referenzen-grid {
             grid-template-columns: 1fr;
+          }
+          :global(.referenz-card) {
+            padding: 20px !important;
           }
         }
       `}</style>

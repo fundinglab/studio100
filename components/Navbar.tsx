@@ -175,7 +175,7 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                style={{ color: '#FFFFFF', fontSize: 24, fontWeight: 600 }}
+                style={{ color: '#FFFFFF', fontSize: 'clamp(18px, 5vw, 24px)', fontWeight: 600 }}
               >
                 {link.label}
               </a>

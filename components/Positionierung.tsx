@@ -193,6 +193,11 @@ export default function Positionierung() {
             gap: 40px;
           }
         }
+        @media (max-width: 640px) {
+          .positionierung-grid {
+            gap: 28px;
+          }
+        }
       `}</style>
     </section>
   );

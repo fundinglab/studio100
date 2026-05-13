@@ -143,6 +143,7 @@ export default function Kontakt() {
               e.preventDefault();
               setSubmitted(true);
             }}
+            className="kontakt-form"
             style={{
               background: '#111111',
               border: '1px solid #1F1F1F',
@@ -304,8 +305,14 @@ export default function Kontakt() {
           }
         }
         @media (max-width: 640px) {
+          .kontakt-grid {
+            gap: 28px;
+          }
           .kontakt-form-grid {
             grid-template-columns: 1fr;
+          }
+          :global(.kontakt-form) {
+            padding: 24px !important;
           }
         }
         :global(input::placeholder),

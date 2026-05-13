@@ -143,9 +143,10 @@ export default function HeroContent() {
         }
         @media (max-width: 640px) {
           .hero-stats-grid {
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 16px;
             align-items: flex-start;
-            gap: 24px;
           }
           .hero-stats-grid :global(.hero-divider) {
             display: none;

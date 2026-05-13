@@ -123,6 +123,7 @@ export default function Leistungen() {
                 ease: [0.25, 0.46, 0.45, 0.94],
               }}
               className="leistung-card"
+              className="leistung-card"
               style={{
                 background: '#FAFAFA',
                 border: '1px solid #EAEAEA',
@@ -242,7 +243,15 @@ export default function Leistungen() {
         }
         @media (max-width: 1024px) {
           .leistungen-grid {
+            grid-template-columns: 1fr 1fr;
+          }
+        }
+        @media (max-width: 640px) {
+          .leistungen-grid {
             grid-template-columns: 1fr;
+          }
+          :global(.leistung-card) {
+            padding: 20px !important;
           }
         }
       `}</style>

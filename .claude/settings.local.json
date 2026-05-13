@@ -2,7 +2,27 @@
   "permissions": {
     "allow": [
       "Bash(ls -la \"C:\\\\Users\\\\matti\\\\Documents\\\\Claude Code\\\\Website builder\" 2>&1; ls \"C:\\\\Users\\\\matti\\\\Downloads\\\\hf_20260510_145325_38a4c90a-88eb-4d49-bcfc-121d5eff7abd.mp4\" 2>&1)",
-      "PowerShell($file = \"C:\\\\Users\\\\matti\\\\Documents\\\\Claude Code\\\\Website builder\\\\public\\\\video\\\\studio100-animation.mp4\"; $size = \\(Get-Item $file\\).Length / 1MB; Write-Output \"File size: $\\([math]::Round\\($size,1\\)\\) MB\")"
+      "PowerShell($file = \"C:\\\\Users\\\\matti\\\\Documents\\\\Claude Code\\\\Website builder\\\\public\\\\video\\\\studio100-animation.mp4\"; $size = \\(Get-Item $file\\).Length / 1MB; Write-Output \"File size: $\\([math]::Round\\($size,1\\)\\) MB\")",
+      "Bash(npx ruflo@latest init --yes)",
+      "Bash(claude mcp *)",
+      "Bash(npx ruflo@latest memory init)",
+      "Bash(npx ruflo@latest swarm init)",
+      "PowerShell(Get-ChildItem 'C:\\\\Users\\\\matti\\\\.claude' -Force | Select-Object Name, @{N='Type';E={if\\($_.PSIsContainer\\){'DIR'}else{'FILE'}}} | Format-Table -AutoSize)",
+      "PowerShell(Write-Host '--- PLUGINS ---'; Get-ChildItem 'C:\\\\Users\\\\matti\\\\.claude\\\\plugins' -Force | Format-Table Name -AutoSize; Write-Host '--- COMMANDS ---'; Get-ChildItem 'C:\\\\Users\\\\matti\\\\.claude\\\\commands' -Force | Format-Table Name -AutoSize; Write-Host '--- PROJECTS COUNT ---'; \\(Get-ChildItem 'C:\\\\Users\\\\matti\\\\.claude\\\\projects' -Force\\).Count)",
+      "mcp__Claude_in_Chrome__list_connected_browsers",
+      "mcp__Claude_in_Chrome__select_browser",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "WebFetch(domain:ultahost.com)",
+      "WebSearch",
+      "mcp__Claude_in_Chrome__browser_batch",
+      "mcp__Claude_in_Chrome__tabs_create_mcp",
+      "mcp__Claude_in_Chrome__navigate",
+      "mcp__Claude_in_Chrome__computer",
+      "PowerShell(ssh -o BatchMode=yes -o StrictHostKeyChecking=accept-new -o ConnectTimeout=10 root@157.173.105.166 'echo \"Auth OK as $\\(whoami\\) on $\\(hostname\\). OS: $\\(lsb_release -ds 2>/dev/null || cat /etc/os-release | grep PRETTY_NAME\\)\"')"
     ]
-  }
+  },
+  "enabledMcpjsonServers": [
+    "ruflo"
+  ],
+  "enableAllProjectMcpServers": true
 }

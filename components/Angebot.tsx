@@ -209,7 +209,7 @@ export default function Angebot() {
         }
         @media (max-width: 640px) {
           .angebot-card {
-            padding: 32px !important;
+            padding: 24px !important;
           }
           .angebot-header {
             flex-direction: column;
