@@ -77,6 +77,7 @@ npx @claude-flow/cli@latest swarm init --topology hierarchical --max-agents 8 --
 | Refactor | architect, coder, reviewer | hierarchical |
 | Performance | perf-engineer, coder | hierarchical |
 | Security | security-architect, auditor | hierarchical |
+| UGC-Prompts (Nano Banana) | banana-ugc-expert | hierarchical |
 
 ### When to Swarm
 - **YES**: 3+ files, new features, cross-module refactoring, API changes, security, performance
@@ -138,6 +139,7 @@ npx @claude-flow/cli@latest hooks worker dispatch --trigger audit
 **Performance**: `performance-engineer`, `perf-analyzer`
 **Coordination**: `hierarchical-coordinator`, `mesh-coordinator`, `adaptive-coordinator`
 **GitHub**: `pr-manager`, `code-review-swarm`, `issue-tracker`, `release-manager`
+**Creative**: `banana-ugc-expert` — IMMER aufrufen, wenn UGC-/Nano-Banana-Prompts geschrieben, verbessert oder reviewt werden. Er ist der globale Experte für realistische UGC-Bildprompts (`.claude/agents/custom/banana-ugc-expert.md`).
 
 Any string works as a custom agent type.
 
